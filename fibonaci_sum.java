@@ -1,7 +1,11 @@
+//12S25003_Afrian Josse siadari
+//12S25004_Sapna Agnes Napitupulu
+//12S25042_Dewi Natasya Sitorus
+
 import java.util.*;
 import java.lang.Math;
 
-public class JavaApplication {
+public class uts {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
