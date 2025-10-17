@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fibonance"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-17 04:49:32 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtRkwzNUVORU87MjAyNS0xMC0xNzswNDoxMDo0MCBQTTsyNjQx"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtRkwzNUVORU87MjAyNS0xMC0xNzswNDo0OTozMiBQTTsxOzI3NjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <for variable="i" start="2" end="n" direction="inc" step="1">
+                <if expression="isPrima(i)">
+                    <then>
+                        <output expression="n&amp;&quot;&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="isPrima" type="Boolean" variable="">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <if expression="x&lt;2">
+                <then/>
+                <else>
+                    <for variable="i" start="2" end="x-1" direction="inc" step="1">
+                        <if expression="x mod i=0">
+                            <then/>
+                            <else/>
+                        </if>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

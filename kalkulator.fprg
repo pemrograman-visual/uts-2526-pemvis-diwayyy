@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="kalkulator"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-17 03:14:12 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtRkwzNUVORU87MjAyNS0xMC0xNzswMjo1MTozMiBQTTsyNjQ1"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtRkwzNUVORU87MjAyNS0xMC0xNzswMzoxNDoxMiBQTTsxOzI3NTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jl, k, kl, bg" type="Real" array="False" size=""/>
+            <declare name="a, b" type="Real" array="False" size=""/>
+            <declare name="pilihan" type="String" array="False" size=""/>
+            <input variable="pilihan"/>
+            <if expression="pilihan=&quot;1&quot;">
+                <then>
+                    <input variable="a"/>
+                    <input variable="b"/>
+                    <assign variable="jl" expression="a+b"/>
+                    <output expression="jl" newline="True"/>
+                </then>
+                <else>
+                    <if expression="pilihan=&quot;2&quot;">
+                        <then>
+                            <input variable="a"/>
+                            <input variable="b"/>
+                            <assign variable="k" expression="a-b"/>
+                            <output expression="k" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="pilihan=&quot;3&quot;">
+                                <then>
+                                    <input variable="a"/>
+                                    <input variable="b"/>
+                                    <assign variable="kl" expression="a*b"/>
+                                    <output expression="kl" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="pilihan=&quot;4&quot;">
+                                        <then>
+                                            <input variable="a"/>
+                                            <input variable="b"/>
+                                            <assign variable="bg" expression="a/b"/>
+                                            <output expression="bg" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
